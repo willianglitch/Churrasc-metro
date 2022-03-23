@@ -1,4 +1,4 @@
-// quantas quantas quilos de carne um adulto conseguer comer
+// quantos quilos de carne um adulto conseguer comer
 
 // Para os homens, calcule 450 g por pessoa. Para as mulheres, 
 // 300 g por pessoa. Já para as crianças, 200 g são suficientes.
