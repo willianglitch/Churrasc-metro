@@ -12,7 +12,7 @@ const mulherAdultas = document.getElementById("mulheres")
 const inputCrianças = document.getElementById("criança")
 const tempoDuração  = document.getElementById("duração")
 
-let resultado = document.getElementById("resultado")
+let resultadoCálculo = document.getElementById("resultado")
 
 function CÁLCULAR(){
     let homens = homenAdultos.value;
@@ -30,6 +30,19 @@ function CÁLCULAR(){
     const carneTotal = calcH + calcM + calcC;
     const cervejaTotal = cervejaPP(duração) * homens + cervejaPP(duração) * mulheres;
     const bebidaTotal = calcularBebida - 500 + bebidaPP(duração) * crianças
+
+    console.log(carneTotal, cervejaTotal , bebidaTotal)
+
+    resultadoCálculo.innerHTML = `<p>${carneTotal/ 1000} kg de carne .</p>`
+    resultadoCálculo.innerHTML += `<p>${Math.ceil(cervejaTotal/350)} latas de cerveja .</p>`
+    resultadoCálculo.innerHTML += `<p>${Math.ceil(bebidaTotal/2000)} pet´s 2L de bebidas .</p>`
+
+    homens = homenAdultos.value = '';
+    mulheres = mulherAdultas.value = '';
+    crianças = inputCrianças.value = '';
+    duração = tempoDuração.value = '';
+
+
     
 }
 
