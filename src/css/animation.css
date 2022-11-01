@@ -1,0 +1,11 @@
+@keyframes move {
+    0%{
+        left: 5%;
+    }
+    50%{
+        left: 93%;
+    }
+    100%{
+        left: 5%;
+    }
+}

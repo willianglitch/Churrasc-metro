@@ -17,7 +17,7 @@ body{
     font-family: 'Roboto', serif;
 }
 .header{
-    height: 160px;
+    height: 180px;
     width: 80%;
     margin: auto;
     display: flex;
@@ -29,26 +29,37 @@ body{
     height: 80px;
     margin-bottom: 12px;
 }
+.header .content P{
+    color: var(--green-200);
+    font-weight: bold;
+    font-size : 14px;
+    margin-bottom: 12px;
+}
 .bar-content{
     height: 40px;
     width: 100%;
-    margin: 12px 0 26px 0;
+    margin: 0 0 26px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
+    /* animation: move 3s linear infinite; */
+    position: relative;
 }
 .bar{
     width: 90%;
     height: 2px;
     background: var(--green-100);
 }
-.square{
+.bar::before{
+    content: "";
+    position: absolute;
     height: 40px;
     width: 40px;
     background: var(--green-400);
     border-radius: 8px;
-    /* position: absolute; */
+    animation: Spin 2s linear infinite;
+    transform: translateY(-50%);
+    animation: move 5s linear infinite;
 }
 .container{
     margin: auto;
@@ -82,5 +93,8 @@ body{
     color: var(--green-400);
     padding-left: 10px;
     font-weight: bold;
+}
+.resultado p{
+    color: var(--green-200);
 }
 
