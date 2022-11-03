@@ -1,12 +1,12 @@
-function createHeader(Icon){
+function createHeader(Icon, text1, text2) {
   return `
   <img src="./src/assept/icon-${Icon}.svg" alt="">
     <div class="content">
       <p>
-        Precisando fazer um churrasco mais não saber por onde começar ?  Deixe que  "Churrascometro" façar esse cálculo para você !!
+        ${text1}
       </p>
       <p>
-        Feito para deixar a sua vida muito mais fácil!!! 😉
+        ${text2}
       </p>
     </div>
   `
@@ -14,10 +14,6 @@ function createHeader(Icon){
 
 function createAnimation(){
   return `<div class="bar"></div> `
-}
-
-function createText(text1, text2){
-  return 
 }
 
 function createCard(title){
@@ -37,7 +33,11 @@ function createCard(title){
 
 document.querySelector("#App").innerHTML = `
     <div class="header">
-        ${createHeader("faceDeath")}
+        ${createHeader(
+          "faceDeath",
+          'Precisando fazer um churrasco mais não saber por onde começar ?  Deixe que  "Churrascometro" façar esse cálculo para você !!',
+          "Feito para deixar a sua vida muito mais fácil!!! 😉"
+        )}
     </div>
 
     <div class="bar-content">
