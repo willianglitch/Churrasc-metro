@@ -32,7 +32,7 @@ body{
 .header .content P{
     color: var(--green-400);
     font-weight: bold;
-    font-size : 18px;
+    font-size : 16px;
     margin-bottom: 12px;
 }
 .bar-content{
