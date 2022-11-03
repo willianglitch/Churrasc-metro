@@ -30,9 +30,9 @@ body{
     margin-bottom: 12px;
 }
 .header .content P{
-    color: var(--green-200);
+    color: var(--green-400);
     font-weight: bold;
-    font-size : 14px;
+    font-size : 18px;
     margin-bottom: 12px;
 }
 .bar-content{
